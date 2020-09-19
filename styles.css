@@ -1,8 +1,37 @@
 body {
- font-family: Helvetica
+  width: 100%;
+  margin: 0;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper {
+  margin: auto;
+  width: 80%;
+}
+.logo,.menu {
+ font-family: PT Serif;
+}
+.logo {
+  margin-right: 63%;
+  padding: 40px 0;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu__item {
+  padding: 0 13px;
+}
+.menu__item:last-child {
+  padding: 0;
 }
 a {
  font-family: Roboto;
+}
+main-content__title {
+ font-family: PT Serif;
 }
 p {
  font-family: Roboto;
