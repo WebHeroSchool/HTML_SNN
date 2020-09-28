@@ -70,7 +70,8 @@
   background: #0056EC;
 }
 
-.menu__item:hover::after, .menu__item_active::after {
+.menu__item:hover::after,
+.menu__item_active::after {
   opacity: 1;
   width: 100%;
 }
@@ -79,7 +80,7 @@
   margin-right: 0;
 }
 .main-content__title {
-  font: pt_serif;
+  font-family: pt_serif;
   margin-bottom: 40px;
 }
 .main-content__subtitle{
