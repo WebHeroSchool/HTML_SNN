@@ -79,15 +79,19 @@
 .menu__item:last-child {
   margin-right: 0;
 }
-.main-content__title {
-  margin-bottom: 40px;
+.main {
+  padding-top: 100px;
+  padding-right: 63%;
+  background: url(img/mainlmg.svg);
 }
-.main-content__subtitle{
-  margin-bottom: 40px;
+.main__title {
+  margin: 0 0 40px 0;
+  font: 50px/65px pt_serifbold, arial, helvetica, sans-serif
 }
-.p {
-  font-family: Roboto;
+.main__subtitle {
+  margin: 0 0 41px 0;
+  font: 18px/21px robotoregular, arial, helvetica, sans-serif
 }
-.button {
+.main__button {
   font-family: Roboto;
 }
