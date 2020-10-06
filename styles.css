@@ -11,12 +11,12 @@
 .header{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin: 40px 0 246px 0;
 }
 
 .logo {
   position: relative;
-  padding: 40px 0;
+  margin: 0;
   padding-left: 44px;
   font: bold 24px/31px pt_serifbold, arial, helvetica;
 }
@@ -51,7 +51,7 @@
 
 .menu__item {
   position: relative;
-  margin-right: 26px;
+  margin-left: 26px;
   font: 18px/21px roboto, helvetica, arial, sans-serif;
   color: #000;
   text-decoration: none;
@@ -90,8 +90,9 @@
 }
 
 .main {
-  padding: 0 63% 100px 0;
-  background: center right no-repeat url(img/mainlmg..svg);
+  position: relative;
+  padding-right: 63%;
+  background: center right no-repeat url(img/main.svg);
 }
 
 .main__title {
@@ -100,6 +101,7 @@
 }
 
 .main__subtitle {
+  position: relative;
   margin: 40px 0 0 0;
   font: 18px/21px roboto, arial, helvetica, sans-serif;
 }
