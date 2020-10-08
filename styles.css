@@ -8,12 +8,15 @@
   width: 80%;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   margin: 40px 0 0 0;
 }
 
+.mobile-menu {
+  display: none;
+}
 .logo {
   position: relative;
   margin: 0;
@@ -32,13 +35,14 @@
 }
 
 .logo__circle_color_dark-blue {
+  top: 50%;
   background: #0056ec;
   border-radius: 50%;
 }
 
 .logo__circle_color_blue {
   left: 8px;
-  top: 56%;
+  top: 70%;
   background: #c8dbfb;
   border-radius: 50%;
   opacity: .7;
@@ -102,7 +106,7 @@
 
 .main__subtitle {
   position: relative;
-  margin: 40px 0 0 0;
+  margin: 35px 0 0 0;
   padding-right: 19%;
   font: 22px roboto, arial, helvetica, sans-serif;
 }
@@ -113,11 +117,12 @@
 
 .main__button {
   display: inline-block;
+  left: 8px;
   margin-top: 40px;
-  font: 18px Roboto, arial, helvetica, sans-serif;
+  font: 18px roboto, arial, helvetica, sans-serif;
   color: #fff;
   background: #0056ec;
-  padding: 18px 28px 18px 21px;
+  padding: 18px 30px 15px 23px;
   text-decoration: none;
   border-radius: 4px;
   transition: opacity  .5s;
@@ -125,4 +130,169 @@
 
 .main__button:hover {
   opacity: .5;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin: auto;
+    width: 90%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .name {
+    opacity: 0;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 23px 0 0 0;
+  }
+
+  .main {
+    text-align: center;
+    margin-top: 32px;
+    padding: 80% 0 0;
+    background-size: 88%;
+    background-position: top center;
+  }
+
+  .main__title {
+    margin-top: 5px;
+    font: 30px/40px pt_serifbold, arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-rigth: 30px;
+    font: 16px/19px roboto, arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    margin-top: 25px;
+    padding: 13px 16px 15px 23px;
+    font: 14px/16px roboto, arial, helvetica, sans-serif;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 16px;
+    top: 16px;
+    padding: 0 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 9999999;
+  }
+
+  .mobile-menu__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 16px;
+    right: 7px;
+    width: 30px;
+    height: 14px;
+    z-index: 999;
+    cursor: pointer;
+    transition: .4s;
+    background: #fff;
+  }
+
+  .mobile-menu__icon {
+    display: block;
+    position: relative;
+    background: #0056ec;
+    width: 80%;
+    height: 3px;
+    transition: .4s;
+  }
+
+  .mobile-menu__icon::after, .mobile-menu__icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #0056ec;
+    width: 100%;
+    height: 3px;
+    transition: .4s;
+  }
+
+  .mobile-menu__icon::after {
+    top: 8px;
+  }
+
+  .mobile-menu__icon::before {
+    top: -8px;
+  }
+
+  .mobile-menu__container {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 998;
+    height: 0;
+    opacity: 1;
+    transition: .5s;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .mobile-menu__list {
+    transition: .5s;
+    list-style: none;
+    padding-left: 0;
+    margin-top: -18px;
+  }
+
+  .mobile-menu__item {
+    font-size: 29px;
+    padding-bottom: 25px;
+  }
+
+  .mobile-menu__link {
+    text-decoration: none;
+    color: #000;
+    font: 30px/28px roboto, arial, helvetica, sans-serif;
+  }
+
+  .mobile-menu__checkbox {
+    display: none;
+  }
+
+  .mobile-menu__checkbox:checked ~ .mobile-menu__container {
+    height: 100%;
+  }
+
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
+    background: transparent;
+   }
+
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before, .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+    top: 0;
+  }
+
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+   }
 }
