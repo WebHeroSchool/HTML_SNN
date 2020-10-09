@@ -17,6 +17,7 @@
 .mobile-menu {
   display: none;
 }
+
 .logo {
   position: relative;
   margin: 0;
@@ -83,8 +84,7 @@
   background: #0056ec;
 }
 
-.menu__item:hover::after,
-.menu__item_active::after {
+.menu__item:hover::after, .menu__item_active::after {
   opacity: 1;
   width: 100%;
 }
@@ -132,6 +132,23 @@
   opacity: .5;
 }
 
+@media (max-width: 1919px){
+  .wrapper {
+    position: relative;
+    width: 90%;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0 0;
+  }
+  .main {
+    margin-top: 120px;
+    padding: 0 40% 120px 0;
+    background: center right no-repeat url(img/frame1024.svg);
+  }
+}
+
 @media (max-width: 768px) {
   .wrapper {
     margin: auto;
@@ -169,11 +186,11 @@
     margin-top: 30px;
     padding-left: 50px;
     padding-rigth: 30px;
-    font: 16px/19px roboto, arial, helvetica, sans-serif;
+    font: 14px/17px roboto, arial, helvetica, sans-serif;
   }
 
   .main__button {
-    margin-top: 25px;
+    margin-top: 28px;
     padding: 13px 16px 15px 23px;
     font: 14px/16px roboto, arial, helvetica, sans-serif;
   }
