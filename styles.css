@@ -334,7 +334,7 @@
 
   .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
     background: transparent;
-   }
+  }
 
   .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before,
   .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
