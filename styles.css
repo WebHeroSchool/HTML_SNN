@@ -84,7 +84,8 @@
   background: #0056ec;
 }
 
-.menu__item:hover::after, .menu__item_active::after {
+.menu__item:hover::after,
+.menu__item_active::after {
   opacity: 1;
   width: 100%;
 }
@@ -128,7 +129,7 @@
   opacity: .5;
 }
 
-@media (max-width: 1919px){
+@media (max-width: 1919px) {
   .wrapper {
     width: 936px;
   }
@@ -157,7 +158,7 @@
     font: 15px/51px roboto, helvetica, arial, sans-serif;
   }
 
-  .menu__item_active::after{
+  .menu__item_active::after {
     display: block;
     top: 35px;
   }
@@ -223,7 +224,6 @@
   .main__subtitle {
     margin-top: 30px;
     padding-left: 50px;
-    padding-rigth: 30px;
     font: 14px/17px roboto, arial, helvetica, sans-serif;
   }
 
@@ -240,8 +240,6 @@
     justify-content: flex-end;
     padding: 0 16px;
     top: 16px;
-    padding: 0 16px;
-    top: 0;
     left: 0;
     right: 0;
     height: 50px;
@@ -272,7 +270,8 @@
     transition: .4s;
   }
 
-  .mobile-menu__icon::after, .mobile-menu__icon::before {
+  .mobile-menu__icon::after,
+  .mobile-menu__icon::before {
     content: "";
     display: block;
     position: absolute;
@@ -305,7 +304,7 @@
     transition: .5s;
     overflow: hidden;
     background-color: #fff;
-  }
+   }
 
   .mobile-menu__list {
     transition: .5s;
@@ -337,7 +336,8 @@
     background: transparent;
    }
 
-  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before, .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before,
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
     top: 0;
   }
 
