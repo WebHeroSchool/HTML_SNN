@@ -349,5 +349,5 @@
   .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-   }
+  }
 }
