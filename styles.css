@@ -131,6 +131,54 @@
 
 @media (max-width: 1919px) {
   .wrapper {
+    width: 935px;
+  }
+
+  .header {
+    height: 34px;
+    margin-bottom: 120px;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu__item {
+    margin-left: 24px;
+    font: 15px/51px roboto, helvetica, arial, sans-serif;
+  }
+
+  .menu__item_active::after {
+    display: block;
+    top: 35px;
+  }
+
+  .main {
+    margin-top: 0;
+    background: top right no-repeat url(img/frame1024.svg);
+    background-size: 55%;
+  }
+
+  .main__title {
+    margin: 0;
+    font: 50px/66px pt_serifbold, arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    margin-top: 40px;
+    padding: 0;
+    font: 17px/20px roboto, arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    margin-top: 41px;
+    padding: 13px 16px 15px 23px;
+    font: 14px/16px roboto, arial, helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 1365px) {
+  .wrapper {
     width: 93%;
   }
 
@@ -161,13 +209,13 @@
 
   .main__title {
     margin: 0;
-    background-position: top;
     font: 50px/66px pt_serifbold, arial, helvetica, sans-serif;
   }
 
   .main__subtitle {
     margin-top: 40px;
-    font: 18px/20px roboto, arial, helvetica, sans-serif;
+    padding: 0;
+    font: 17px/20px roboto, arial, helvetica, sans-serif;
   }
 
   .main__button {
@@ -177,10 +225,10 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .wrapper {
     margin: auto;
-    width: 90%;
+    width: 80%;
   }
 
   .menu {
@@ -188,7 +236,7 @@
   }
 
   .logo__name {
-    opacity: 0;
+      opacity: 0;
   }
 
   .header {
@@ -201,7 +249,7 @@
     text-align: center;
     margin-top: 32px;
     padding: 80% 0 0;
-    background-size: 88%;
+    background-size: 80%;
     background-position: top center;
   }
 
@@ -212,8 +260,7 @@
 
   .main__subtitle {
     margin-top: 30px;
-    padding-left: 50px;
-    font: 14px/17px roboto, arial, helvetica, sans-serif;
+    font: 16px/19px roboto, arial, helvetica, sans-serif;
   }
 
   .main__button {
