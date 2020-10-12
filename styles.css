@@ -128,29 +128,35 @@
 
 .main__button-blic {
   position: relative;
+  top: -70px
   margin: 0;
-  width: 8px;
-  height: 70px;
+  width: 10px;
+  height: 85px;
   background: #fff;
   transform: rotate(-45deg);
   opacity: .1;
-  animation: example 7s infinite ease-in-out alternate;
+  animation: example 5s infinite ease-in-out alternate-reverse;
 }
 
 @keyframes example {
   0% {
     left: 0;
-    top: -59px;
+    top: -70x;
   }
 
   50% {
-    left: 210px;
-    top: -59px;
+    left: 270px;
+    top: -70px;
+  }
+
+  75% {
+    right: 270px;
+    top: -70px;
   }
 
   100% {
     left: 0;
-    top: -59px;
+    top: -70px;
   }
 }
 
