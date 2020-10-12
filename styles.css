@@ -127,20 +127,29 @@
 }
 
 .main__button-blic {
-    position: relative;
-    margin: 0;
-    width: 8px;
-    height: 70px;
-    background: #fff;
-    transform: rotate(-45deg);
-    opacity: .1;
-    animation: example 7s infinite ease-in-out alternate;
+  position: relative;
+  margin: 0;
+  width: 8px;
+  height: 70px;
+  background: #fff;
+  transform: rotate(-45deg);
+  opacity: .1;
+  animation: example 7s infinite ease-in-out alternate;
 }
 
 @keyframes example {
-    0%   {left:0px; top:-59px;}
-    50%  {left:210px; top:-59px;}
-    100% {left:0px; top:-59px;}
+  0%   {
+    left:0;
+    top:-59px;
+  }
+  50%  {
+    left:210px;
+    top:-59px;
+  }
+  100% {
+    left:0;
+    top:-59px;
+  }
 }
 
 @media (max-width: 1500px) {
