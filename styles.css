@@ -114,6 +114,7 @@
 
 .main__button {
   display: inline-block;
+  position: relative;
   left: 8px;
   margin-top: 40px;
   font: 18px roboto, arial, helvetica, sans-serif;
@@ -122,14 +123,27 @@
   padding: 18px 30px 15px 23px;
   text-decoration: none;
   border-radius: 4px;
-  transition: opacity  .5s;
+  transition: opacity 1s;
 }
 
-.main__button:hover {
-  opacity: .5;
+.main__button-blic {
+    position: relative;
+    margin: 0;
+    width: 8px;
+    height: 70px;
+    background: #fff;
+    transform: rotate(-45deg);
+    opacity: .1;
+    animation: example 7s infinite ease-in-out alternate;
 }
 
-@media (max-width: 1919px) {
+@keyframes example {
+    0%   {left:0px; top:-59px;}
+    50%  {left:210px; top:-59px;}
+    100% {left:0px; top:-59px;}
+}
+
+@media (max-width: 1500px) {
   .wrapper {
     width: 935px;
   }
@@ -177,7 +191,7 @@
   }
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1300px) {
   .wrapper {
     width: 93%;
   }
@@ -378,11 +392,9 @@
 
   .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
     transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
   }
 
   .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
   }
 }
