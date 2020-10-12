@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html>
- <head>
+<head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="fonts/font.css">
   <link rel="stylesheet" href="fonts/roboto.css">
   <title>Мой первый сайт</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
- <div class="wrapper">
-  <header class="header">
-    <div class="logo">
-      <div class="logo__circle logo__circle_color_dark-blue"></div>
-      <div class="logo__circle logo__circle_color_blue"></div>
-      app.creation
-    </div>
-    <nav class="menu">
-      <a class="menu__item" href="#">start</a>
-      <a class="menu__item" href="#">services</a>
-      <a class="menu__item" href="#">about</a>
-      <a class="menu__item" href="#">blog</a>
-      <a class="menu__item menu__item_active" href="#">contact us</a>
-    </nav>
-  </header>
+  <div class="wrapper">
+    <header class="header">
+      <div class="logo">
+        <div class="logo__circle logo__circle_color_dark-blue"></div>
+        <div class="logo__circle logo__circle_color_blue"></div>
+        <span class="logo__name">app.creation</span>
+      </div>
+      <nav class="menu">
+        <a class="menu__item" href="#">start</a>
+        <a class="menu__item" href="#">services</a>
+        <a class="menu__item" href="#">about</a>
+        <a class="menu__item" href="#">blog</a>
+        <a class="menu__item menu__item_active" href="#">contact us</a>
+      </nav>
+      <nav class="mobile-menu">
+        <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+        <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+        <div class="mobile-menu__container">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">start</a></li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">services</a></li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">about</a></li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">blog</a></li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">contact us</a></li>
+        </ul>
+        </div>
+      </nav>
+    </header>
     <section class="main">
-      <h1 class="main__title">Building an App <span class="main__title-text_highlight">Without
-Design Expertise?</span></h1>
-      <p class="main__subtitle">I help tech startups design better digital products without hiring a full-time designer</p>
+      <h1 class="main__title">Building&nbsp;an&nbsp;App <span class="main__title-text_highlight">Without&nbsp;Design Expertise?</span></h1>
+      <p class="main__subtitle">I help tech startups design better digital products without hiring&nbsp;a full-time designer</p>
       <a class="main__button" href="#">Schedule free consultation</a>
-    </main>
-    </div>
-  </section>
- </div>
+      <div class="main__button-blic"></div>
+    </section>
+  </div>
 </body>
 </html>
