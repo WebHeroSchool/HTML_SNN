@@ -93,7 +93,7 @@
 .main {
   margin-top: 172px;
   padding: 20px 63% 180px 0;
-  background: center right no-repeat url(img/main.svg);
+  background: top right no-repeat url(img/main.svg);
 }
 
 .main__title {
@@ -251,11 +251,6 @@
 }
 
 @media (max-width: 800px) {
-  .wrapper {
-    margin: auto;
-    width: 80%;
-  }
-
   .menu {
     display: none;
   }
@@ -273,24 +268,25 @@
   .main {
     text-align: center;
     margin-top: 32px;
-    padding: 80% 0 0;
-    background-size: 80%;
+    padding: 78% 0 0;
+    background-size: 85%;
     background-position: top center;
   }
 
   .main__title {
-    margin-top: 5px;
+    margin-top: 0;
+    background-position: top center;
     font: 30px/40px pt_serifbold, arial, helvetica, sans-serif;
   }
 
   .main__subtitle {
-    margin-top: 30px;
+    margin: 30px 47px 0 47px;
     font: 16px/19px roboto, arial, helvetica, sans-serif;
   }
 
   .main__button {
     margin-top: 28px;
-    padding: 13px 16px 15px 23px;
+    padding: 12px 24px 12px 18px;
     font: 14px/16px roboto, arial, helvetica, sans-serif;
   }
 
