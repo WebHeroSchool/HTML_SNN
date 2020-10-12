@@ -138,17 +138,19 @@
 }
 
 @keyframes example {
-  0%   {
-    left:0;
-    top:-59px;
+  0% {
+    left: 0;
+    top: -59px;
   }
-  50%  {
-    left:210px;
-    top:-59px;
+
+  50% {
+    left: 210px;
+    top: -59px;
   }
+
   100% {
-    left:0;
-    top:-59px;
+    left: 0;
+    top: -59px;
   }
 }
 
