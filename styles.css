@@ -293,6 +293,7 @@
     padding: 13px 16px 15px 23px;
     font: 14px/16px roboto, arial, helvetica, sans-serif;
   }
+  
   .main__button-blic {
     width: 10px;
     height: 105px;
@@ -302,7 +303,7 @@
   @keyframes example {
     0% {
       left: 0;
-      top: -70x;
+      top: -70px;
     }
 
     50% {
@@ -315,6 +316,7 @@
       top: -70px;
     }
   }
+
   .mobile-menu {
     position: fixed;
     display: flex;
