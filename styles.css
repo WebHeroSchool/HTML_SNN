@@ -94,6 +94,7 @@
   margin-top: 172px;
   padding: 20px 63% 180px 0;
   background: top right no-repeat url(img/main.svg);
+  background-size: 50%;
 }
 
 .main__title {
