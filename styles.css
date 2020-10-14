@@ -250,6 +250,9 @@
 }
 
 @media (max-width: 800px) {
+  .wrapper {
+    width: 89%;
+  }
   .menu {
     display: none;
   }
@@ -268,19 +271,19 @@
     text-align: center;
     margin-top: 32px;
     padding: 78% 0 0;
-    background-size: 85%;
+    background-size: 89%;
     background-position: top center;
   }
 
   .main__title {
-    margin-top: 0;
+    margin-top: 13px;
     background-position: top center;
-    font: 30px/40px pt_serifbold, arial, helvetica, sans-serif;
+    font: 31px/40px pt_serifbold, arial, helvetica, sans-serif;
   }
 
   .main__subtitle {
     margin: 30px 47px 0 47px;
-    font: 16px/19px roboto, arial, helvetica, sans-serif;
+    font: 15px/19px roboto, arial, helvetica, sans-serif;
   }
 
   .main__button {
